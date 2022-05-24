@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!--
+        Stwórz prosty kalkulator
+Zawierać będzie 2 inputy typu number
+a także 5 przycisków:
+- +
+- -
+- /
+- *
+- C
+w zależności od klikniętych przycisków będzie wykonywana określona operacja matematyczna, której wynik wypisywany będzie na jakimś divie
+
+Podczas tworzenia skup się na czystości kodu, dobrym nazewnictwie a także miej na uwadze sposób w jaki tworzyliśmy funkcje które korzystały z siebie nawzajem
+całość umieść na publicznym repozytorium git i prześlij link
+    -->
+    <div class="calc">
+        <input type="number" class="calc__input" id="firstNumber" placeholder="Podaj liczbe" oninput="getNumbers()">
+        <input type="number" class="calc__input" id="secondNumber" placeholder="Podaj liczbe" oninput="getNumbers()">
+        <div class="calc__btn-box">
+            <button class="calc__btn" onclick="addNumbers()">+</button>
+            <button class="calc__btn" onclick="deductNumbers()">-</button>
+            <button class="calc__btn" onclick="divideNumbers()">/</button>
+            <button class="calc__btn" onclick="multiplyNumbers()">*</button>
+            <button class="calc__btn" onclick="clearCalc()">C</button>
+        </div>
+        <div class="calc__result-box">
+            <p class="calc__result-text"></p>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
